@@ -1,0 +1,160 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.filter-group {
+  margin-bottom: 1.5rem;
+}
+
+#taskInput,
+#filterInput,
+#dueDateInput,
+#priorityInput {
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  flex: 1 1 150px;
+  min-width: 100px;
+}
+
+#dueDateInput {
+  min-width: 130px;
+  max-width: 180px;
+}
+
+#addTaskBtn,
+#clearAllBtn {
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: none;
+  color: white;
+}
+
+#addTaskBtn {
+  background-color: #2c89e8;
+}
+
+#clearAllBtn {
+  margin-top: 1rem;
+  background: rgb(207, 66, 66);
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+  flex-wrap: wrap;
+}
+
+.task-text {
+  flex: 1;
+  min-width: 120px;
+}
+
+.task-dueDate,
+.task-priority,
+.delete-btn {
+  flex-shrink: 0;
+  margin: 0;
+}
+
+.task-dueDate {
+  width: 120px;
+  text-align: left;
+}
+
+.task-priority {
+  width: 100px;
+  text-align: left;
+}
+
+.delete-btn {
+  padding: 4px 8px;
+  cursor: pointer;
+  border: none;
+  background-color: #e74c3c;
+  color: white;
+  border-radius: 4px;
+}
+
+.edit-date,
+.edit-priority {
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  padding: 6px 8px;
+  font-size: 1rem;
+  background-color: white;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+  flex-shrink: 0;
+  width: auto;
+  max-width: 160px;
+  min-width: 100px;
+  box-sizing: border-box;
+}
+
+.edit-date {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+input:focus,
+select:focus,
+.edit-date:focus,
+.edit-priority:focus,
+#dueDateInput:focus,
+#priorityInput:focus,
+#taskInput:focus,
+#filterInput:focus {
+  outline: none;
+  border-radius: 6px;
+  box-shadow: 0 0 0 1px #aaa;
+  border: 1px solid #888;
+  background-color: #f0f0f0;
+  padding: 6px 8px;
+  box-shadow: 0 0 0 1px #aaa !important;
+}
+
+@media (max-width: 500px) {
+  .input-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #addTaskBtn,
+  #clearAllBtn {
+    width: 100%;
+  }
+
+  .task {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .task-dueDate,
+  .task-priority,
+  .delete-btn {
+    width: 100%;
+  }
+}
