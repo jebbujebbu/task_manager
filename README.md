@@ -26,7 +26,7 @@ Open the app by opening index.html in your web browser.
 
 No build tools, dependencies, or installation required.
 
-You can also host it using "GitHub Pages" or any static file host.
+You can also host it using **GitHub Pages** or any static file host.
 
 # Example
 
@@ -34,13 +34,13 @@ Add Tasks:
     - Enter a task name
     -(Optional) Select a due date
     - Select a priority (low, medium, high)
-    - Click "Add Task"
+    - Click **Add Task**
 
 Manage Tasks:
     - Click on a task's name, date, or priority to edit it inline
     - Use the search input to filter tasks by name
-    - Sorting is automatic: "Priority → Due Date → A–Z"
-    - Click "Clear All" to remove all tasks at once
+    - Sorting is automatic: **Priority → Due Date → A–Z**
+    - Click **Clear All** to remove all tasks at once
 
 # Responsive Design
 
