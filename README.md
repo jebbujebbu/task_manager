@@ -22,12 +22,18 @@ cd task_manager
 
 # Usage
 
-Open the app by opening index.html in your web browser.
+You can try the app directly in your browser — no installation required:
+🔗 **Live version:** [https://jebbujebbu.github.io/task_manager/](https://jebbujebbu.github.io/task_manager/)
 
-No build tools, dependencies, or installation required.
-
-You can also host it using **GitHub Pages** or any static file host.
-
+To run it locally:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/jebbujebbu/task_manager.git
+   cd task_manager
+    ```
+2. Open `index.html` in your web browser.
+    No build tools or dependencies needed — it's a fully static app.
+   
 # Example
 
 Add Tasks:
