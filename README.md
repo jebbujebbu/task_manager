@@ -23,6 +23,7 @@ cd task_manager
 # Usage
 
 You can try the app directly in your browser — no installation required:
+
 🔗 **Live version:** [https://jebbujebbu.github.io/task_manager/](https://jebbujebbu.github.io/task_manager/)
 
 To run it locally:
